@@ -16,15 +16,20 @@ body {
   padding: 2rem 2rem;
 }
 
+h2, h3 {
+  color: #4c4e61;
+}
+
 header {
   width: 100%;
-  margin: 2rem auto;
+  margin: 4rem auto;
   text-align: center;
 }
 
 header h2 {
   font-size: 1.5rem;
   font-weight: 200;
+  color: #4c4e61;
 }
 
 header h1 {
