@@ -13,10 +13,11 @@ html {
 
 body {
   background-color: #fafafa;
+  padding: 2rem 2rem;
 }
 
 header {
-  width: 90%;
+  width: 100%;
   margin: 2rem auto;
   text-align: center;
 }
@@ -27,10 +28,128 @@ header h2 {
 }
 
 header h1 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
-header h1 p {
+header p {
+  margin-top: .5rem;
   font-size: 1rem;
+  color: #a3a5ae;
+}
+
+main .card {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 1px 5px 30px rgba(163, 165, 174, 0.5);
+          box-shadow: 1px 5px 30px rgba(163, 165, 174, 0.5);
+  overflow: hidden;
+}
+
+main .card .card__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+main .card .card__content h2 {
+  font-size: 1.2rem;
+}
+
+main .card .card__content p {
+  font-size: .9rem;
+  color: #a3a5ae;
+}
+
+main .card .card__content--supervisor:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(/frontend/assets/icon-supervisor.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .card .card__content--team-builder:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(/frontend/assets/icon-team-builder.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .card .card__content--karma:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(/frontend/assets/icon-karma.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .card .card__content--calculator:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(/frontend/assets/icon-calculator.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .card--supervisor:before {
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #45d3d3;
+}
+
+main .card--team-builder:before {
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ea5353;
+}
+
+main .card--karma:before {
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fcaf4a;
+}
+
+main .card--calculator:before {
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #549ef2;
 }
 /*# sourceMappingURL=main.css.map */

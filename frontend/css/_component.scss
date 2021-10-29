@@ -1,0 +1,78 @@
+main {
+
+    .card {
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        box-shadow: 1px 5px 30px rgba($grayish_blue, 0.5);
+        overflow: hidden;
+
+        .card__content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            h2 {
+                font-size: 1.2rem;
+            }   
+    
+            p {
+                font-size: .9rem;
+                color: $grayish_blue;
+            }    
+            
+            &--supervisor:after {
+                content: '';  
+                @include card-icon(icon-supervisor);
+            }           
+
+            &--team-builder:after {
+                content: '';  
+                @include card-icon(icon-team-builder);
+            }
+            
+            &--karma:after {
+                content: '';  
+                @include card-icon(icon-karma);
+            }
+
+            &--calculator:after {
+                content: '';  
+                @include card-icon(icon-calculator);
+            }
+        }       
+    }
+
+    .card--supervisor {
+        &:before {
+            content: '';            
+            @include card-line-top($cyan);
+        }        
+    }
+
+    .card--team-builder {
+        &:before {
+            content: '';            
+            @include card-line-top($red);
+        }
+    }
+
+    .card--karma {
+        &:before {
+            content: '';            
+            @include card-line-top($orange);
+        }
+    }
+
+    .card--calculator {
+        &:before {
+            content: '';            
+            @include card-line-top($blue);
+        }
+    }
+}
+
