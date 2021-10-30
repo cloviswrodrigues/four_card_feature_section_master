@@ -20,6 +20,10 @@ h2, h3 {
   color: #4c4e61;
 }
 
+p {
+  color: #a3a5ae;
+}
+
 header {
   width: 100%;
   margin: 4rem auto;
@@ -39,17 +43,17 @@ header h1 {
 header p {
   margin-top: .5rem;
   font-size: 1rem;
-  color: #a3a5ae;
 }
 
 main .card {
   width: 100%;
+  max-width: 315px;
   height: 30vh;
   position: relative;
   padding: 2rem;
+  margin: 0 auto 2rem auto;
   background-color: white;
   border-radius: 10px;
-  margin-bottom: 2rem;
   -webkit-box-shadow: 1px 5px 30px rgba(163, 165, 174, 0.5);
           box-shadow: 1px 5px 30px rgba(163, 165, 174, 0.5);
   overflow: hidden;
@@ -67,7 +71,6 @@ main .card .card__content h2 {
 
 main .card .card__content p {
   font-size: .9rem;
-  color: #a3a5ae;
 }
 
 main .card .card__content--supervisor:after {
