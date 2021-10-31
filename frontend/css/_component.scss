@@ -1,5 +1,14 @@
 main {
 
+    @media screen and (min-width: $break-desktop){
+        display: grid;
+        grid-template-areas: "card-supervisor card-team-builder card-calculator"
+                             "card-supervisor card-karma card-calculator";
+        justify-content: center;
+        align-items: center;
+        grid-gap: 2rem;
+    }
+
     .card {
         width: 100%;
         max-width: 315px;
@@ -11,6 +20,10 @@ main {
         border-radius: 10px;
         box-shadow: 1px 5px 30px rgba($grayish_blue, 0.5);
         overflow: hidden;
+
+        @media screen and (min-width: $break-desktop) {
+            margin: 0;
+        }
 
         .card__content {
             position: relative;
@@ -48,6 +61,8 @@ main {
     }
 
     .card--supervisor {
+        grid-area: card-supervisor;
+
         &:before {
             content: '';            
             @include card-line-top($cyan);
@@ -55,6 +70,8 @@ main {
     }
 
     .card--team-builder {
+        grid-area: card-team-builder;
+
         &:before {
             content: '';            
             @include card-line-top($red);
@@ -62,6 +79,8 @@ main {
     }
 
     .card--karma {
+        grid-area: card-karma;
+
         &:before {
             content: '';            
             @include card-line-top($orange);
@@ -69,6 +88,8 @@ main {
     }
 
     .card--calculator {
+        grid-area: card-calculator;
+
         &:before {
             content: '';            
             @include card-line-top($blue);

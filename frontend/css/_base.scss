@@ -9,6 +9,8 @@ $very_dark_blue: hsl(234, 12%, 34%);
 $grayish_blue: hsl(229, 6%, 66%);
 $very_light_gray: hsl(0, 0%, 98%);
 
+$break-desktop: 1000px;
+
 * {
     margin: 0;
     padding: 0;
@@ -23,9 +25,13 @@ html {
 body {
     background-color: $very_light_gray;
     padding: 2rem 2rem;
+
+    @media screen and (min-width: $break-desktop) {
+        padding: 0;
+    }
 }
 
-h2, h3 {
+h1, h2, h3 {
     color: $very_dark_blue;
 }
 
